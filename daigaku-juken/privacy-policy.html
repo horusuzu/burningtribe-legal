@@ -5,42 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>プライバシーポリシー — 大学受験ミニコーチ</title>
   <style>
-    :root {
-      --bg: #0d1117; --surface: #161b22; --border: #30363d;
-      --text: #e6edf3; --muted: #8b949e; --accent: #58a6ff; --max: 720px;
-    }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif; line-height: 1.75; padding: 2rem 1.25rem 5rem; }
-    .container { max-width: var(--max); margin: 0 auto; }
-    h1 { font-size: 1.75rem; font-weight: 900; margin-bottom: 0.25rem; }
-    .meta { color: var(--muted); font-size: 0.875rem; margin-bottom: 2.5rem; }
-    h2 { font-size: 1.1rem; font-weight: 700; margin: 2rem 0 0.5rem; border-left: 3px solid var(--accent); padding-left: 0.75rem; }
-    p { color: var(--muted); margin-bottom: 0.75rem; }
-    a { color: var(--accent); }
-    hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
-    .back { display: inline-block; color: var(--accent); font-size: 0.875rem; margin-bottom: 1.5rem; text-decoration: none; }
+    :root { --bg:#0d1117; --surface:#161b22; --border:#30363d; --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --max:720px; }
+    *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+    body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif; line-height:1.75; padding:2rem 1.25rem 5rem; }
+    .container { max-width:var(--max); margin:0 auto; }
+    h1 { font-size:1.75rem; font-weight:900; margin-bottom:.25rem; }
+    .meta { color:var(--muted); font-size:.875rem; margin-bottom:2.5rem; }
+    h2 { font-size:1.1rem; font-weight:700; margin:2rem 0 .5rem; border-left:3px solid var(--accent); padding-left:.75rem; }
+    p, li { color:var(--muted); margin-bottom:.75rem; }
+    ul { padding-left:1.4rem; }
+    a { color:var(--accent); }
+    hr { border:0; border-top:1px solid var(--border); margin:2.5rem 0; }
+    .back { display:inline-block; color:var(--accent); font-size:.875rem; margin-bottom:1.5rem; text-decoration:none; }
   </style>
 </head>
 <body>
   <div class="container">
     <a class="back" href="../">← アプリ一覧</a>
     <h1>プライバシーポリシー</h1>
-    <p class="meta">大学受験ミニコーチ &nbsp;|&nbsp; 最終更新日: 2026年7月28日</p>
-    <h2>1. 対象アプリと端末内データ</h2>
-    <p>対象アプリ名は「大学受験ミニコーチ」、Android パッケージ名は <code>com.burningtribe.daigakujuken</code> です。学習進捗、正誤・復習状態、設定は、学習機能の提供のため端末内に保存します。これらは利用者がアプリを削除するまで端末に残ります。</p>
-    <h2>2. 購入とRevenueCat</h2>
-    <p>Premium機能の購入・復元と購読状態の確認のため、ストアの課金基盤およびRevenueCatを利用します。RevenueCatは購読・購入状態を処理する事業者です。課金情報そのものはApple App StoreまたはGoogle Playの課金基盤で処理されます。</p>
-    <h2>3. 明示同意による外部AI</h2>
-    <p>AIコーチの外部エンドポイントが設定され、利用者が明示的に同意した場合に限り、学習相談の入力をバックエンドおよび接続先AIサービスへ送信して回答を生成します。外部AIを利用しない場合は、利用可能な端末内の学習機能を利用できます。外部AI処理の目的は学習相談への回答生成です。現在の静的ソース監査では、AI回答報告の送信経路は確認されていません。</p>
-    <h2>4. 保存期間・削除請求</h2>
-    <p>端末内データはアプリ削除で削除できます。RevenueCat、ストア、外部AI処理で処理されるデータの保存期間は、各事業者のポリシーまたは処理に必要な期間に従います。削除または取扱いに関する依頼は下記連絡先へお願いします。</p>
-    <h2>5. お問い合わせ</h2>
-    <p>メール: <a href="mailto:burningtribe.apps@gmail.com">burningtribe.apps@gmail.com</a><br>
-    開発者: バーニングトライブ<br>
-    Bundle ID: com.burningtribe.daigakujuken</p>
+    <p class="meta">大学受験ミニコーチ | 最終更新日: 2026年7月29日</p>
 
+    <h2>1. 対象アプリと端末内データ</h2>
+    <p>本ポリシーは「大学受験ミニコーチ」（Bundle ID / パッケージ名: <code>com.burningtribe.daigakujuken</code>）に適用されます。学習進捗、正誤、復習状態、選択した教科などの学習情報は、学習履歴の表示と復習提案のため端末内に保存します。</p>
+
+    <h2>2. 外部サービスへ送信する情報</h2>
+    <ul>
+      <li>購入、復元、Premium利用状態の確認時に、RevenueCatとApple App StoreまたはGoogle Playの課金基盤が、購入状態の確認に必要なストア由来の情報を処理します。</li>
+      <li>利用者がAIコーチへ相談を送信した場合、入力した相談内容、選択した教科、完了済みレッスンの情報をAIコーチ用バックエンドへ送信し、学習アドバイスの生成だけに使用します。相談欄には氏名、連絡先、受験番号など不要な個人情報を入力しないでください。</li>
+    </ul>
+
+    <h2>3. 利用目的</h2>
+    <p>学習履歴の表示、復習提案、AIコーチによる学習相談への応答、購読状態の確認、購入復元、Premium機能の提供、不具合および問い合わせへの対応に利用します。</p>
+
+    <h2>4. 追跡・広告</h2>
+    <p>本アプリは第三者広告を表示せず、Google AdMobその他の広告SDKを搭載していません。広告ID、IDFA、Device ID、Advertising Dataを広告目的で収集または共有せず、他社のアプリやウェブサイトをまたぐ行動追跡を行いません。そのため、App Tracking Transparencyによる追跡許可の要求は行いません。</p>
+
+    <h2>5. 第三者サービス</h2>
+    <p>RevenueCat（購読状態と購入復元）、Apple App Store / Google Play（アプリ内課金）、AIコーチ用バックエンドおよび応答生成に利用するAIサービスを使用します。</p>
+
+    <h2>6. 保存・削除</h2>
+    <p>端末内データはアプリの削除により削除できます。外部サービスで処理される情報の保存期間は、各事業者のポリシーまたはサービス提供に必要な期間に従います。削除または取扱いに関する依頼は下記連絡先へお願いします。</p>
+
+    <h2>7. お問い合わせ</h2>
+    <p>メール: <a href="mailto:burningtribe.apps@gmail.com">burningtribe.apps@gmail.com</a><br>開発者: バーニングトライブ</p>
     <hr>
-    <p style="font-size:0.8rem;">© 2026 バーニングトライブ</p>
+    <p style="font-size:.8rem;">© 2026 バーニングトライブ</p>
   </div>
 </body>
 </html>
