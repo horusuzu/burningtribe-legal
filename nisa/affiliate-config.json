@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "enabled": true,
+  "heading": "口座・サービスを比較する",
+  "description": "掲載先の条件や手数料を公式ページで確認してからお申し込みください。",
+  "disclosure": "広告・PRを含みます。リンク経由の申込みで運営者に報酬が入る場合があります。",
+  "offers": [
+    {
+      "id": "coincheck",
+      "enabled": true,
+      "badge": "PR",
+      "title": "Coincheck",
+      "description": "暗号資産サービスの口座開設情報を確認できます。NISA商品ではありません。",
+      "cta": "公式ページで確認",
+      "url": "https://h.accesstrade.net/sp/cc?rk=0100naxx00mnww"
+    }
+  ]
+}
