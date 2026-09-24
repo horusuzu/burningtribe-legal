@@ -13,6 +13,15 @@
       "description": "暗号資産サービスの口座開設情報を確認できます。NISA商品ではありません。",
       "cta": "公式ページで確認",
       "url": "https://h.accesstrade.net/sp/cc?rk=0100naxx00mnww"
+    },
+    {
+      "id": "toushi-no-mikata",
+      "enabled": true,
+      "badge": "PR",
+      "title": "投資のミカタ",
+      "description": "資産形成をこれから始める方向けに、専任のFP(ファイナンシャルプランナー)が相談に対応する無料の相談サービスです(運営: 合同会社オンライン)。運用成果を約束するものではありません。相談の条件・内容は公式ページでご確認ください。",
+      "cta": "公式ページで条件を確認",
+      "url": "https://t.felmat.net/fmcl?ak=S7032T.1.2111024J.C141125E&pb=osusume"
     }
   ]
 }
