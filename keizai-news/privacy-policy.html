@@ -1,8 +1,12 @@
 <!doctype html>
 <html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>プライバシーポリシー | 経済ニュースまとめ</title><style>body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.8;color:#172033;max-width:760px;margin:auto;padding:32px 20px}h1{line-height:1.35}a{color:#0759b8}</style></head><body>
-<main><h1>プライバシーポリシー — 経済ニュースまとめ</h1><p>最終更新日: 2026年9月13日</p>
-<h2>収集する情報</h2><p>本アプリは、AI解説に必要なニュース本文・要約テキストを除き、ユーザーの個人情報をサーバーに送信しません。ブックマーク等のデータは端末内に保存されます。本アプリに広告は表示されません。</p>
-<h2>第三者サービス</h2><ul><li>RevenueCat（サブスクリプション課金管理）: 購入・復元処理のために利用します。<a href="https://www.revenuecat.com/privacy">RevenueCat Privacy Policy</a></li><li>Cloudflare Worker / Gemini API（AI解説）: APIキーはアプリ内に保存しません。</li><li>OpenAI, L.L.C.（予備）: Googleが応答できないときの回答生成に利用。送信・処理される情報は同じ入力内容・生成出力（OpenAIの学習に利用されることがあります）。</li></ul>
-<h2>AIの送信先と予備の送信先</h2><p>AI機能に入力したテキストと、対象機能で選択した画像は、運営者のCloudflare Workerを経由して Google LLC（米国）の Gemini API へ送信します。通常はここだけで処理します。</p><p>Google側の障害や上限超過で応答が得られないときに限り、予備として OpenAI, L.L.C.（米国）へ同じ内容を送って回答を作ります。予備を利用した場合、送信した入力内容と生成された出力は、OpenAIがサービスやモデルの改善・学習に利用することがあります。いずれの場合も、運営者から即時の削除を保証することはできません。</p><p>このため、氏名・住所・電話番号・メールアドレスなどの連絡先、他人が写った画像、病歴・信条といった要配慮個人情報は入力しないでください。AI機能の利用は任意です。同意しない場合、またはAI機能を使わない場合、上記の送信は行われません。</p>
-<h2>データの削除</h2><p>アプリのアンインストールまたは設定画面から全データを削除できます。</p>
-<h2>お問い合わせ</h2><p>メール: burningtribe.apps@gmail.com<br>開発者: バーニングトライブ</p><p>Bundle ID: tokyo.burningtribe.keizainews</p></main></body></html>
+<main><h1>プライバシーポリシー — 経済ニュースまとめ</h1><p>最終更新日: 2026年9月24日</p>
+<h2>収集・送信する情報</h2><p>本アプリにアカウント登録はありません。氏名・メールアドレス・位置情報・連絡先・広告識別子（IDFA/広告ID）は取得しません。ブックマーク、AI送信への同意の有無、オンボーディングの完了状態は端末内（アプリの保存領域）にだけ保存し、当社のサーバーには送りません。</p>
+<h2>ニュースの取得</h2><p>ニュースはNHK Webの公開RSSから取得します。取得できないときに限り、公開RSSの取得を中継する外部サービス（allorigins.win）を経由して同じRSSを取得することがあります。いずれもRSSのURLへの通常のアクセスで、利用者の情報は送りません（通信の性質上、IPアドレス等は相手先に届きます）。</p>
+<h2>AI解説（プレミアム限定）と送信先</h2><p>AI解説を初めて使う前に、送信先と送信内容を示す確認画面を表示します。同意した場合に限り、選んだニュースのタイトル・カテゴリ・概要（NHK公開RSSの要約）と解説の指示文を、運営者のCloudflare Workerを経由して Google LLC（米国）の Gemini API へ送信します。</p><p>利用者が入力した文章、端末情報、購入情報は送信しません。運営者のWorkerは送信内容を保存しません。Googleは同社の規約に基づいて内容を処理します。</p><p>本アプリからのAI解説の要求は、OpenAIなど他のAI事業者へは送りません。</p><p>同意しない場合は送信しません。同意は設定画面の「AI解説の送信」からいつでも取り消せます。</p>
+<h2>自社PR（無料版）</h2><p>無料版では、当社の他アプリのお知らせ（自社PR）を一覧画面に表示します。表示のため、一覧画面を表示している間だけ当社のサーバー（ads.burningtribe.tokyo）からお知らせの一覧を取得し、表示回数の集計として本アプリの識別名・端末の種類（iOS/Android）・表示したお知らせのリンク先を送信します。利用者個人を識別する情報は送りません。プレミアムでは取得・表示しません。</p><p>第三者の広告SDK（Google AdMob等）は使用していません。トラッキング（App Tracking Transparency）の許可も求めません。</p>
+<h2>購入の管理</h2><p>サブスクリプションの購入・復元は、Apple（App Store）またはGoogle（Google Play）の決済を使います。購入状態の確認のため、RevenueCat, Inc. のサービスを利用し、アプリごとの匿名の利用者IDと購入履歴を送信します。端末の広告識別子の自動収集は無効にしています。</p>
+<h2>利用する外部サービス</h2><ul><li>Google LLC（Gemini API）: AI解説の生成 <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li><li>Cloudflare, Inc.（AI送信の中継） <a href="https://www.cloudflare.com/privacypolicy/">https://www.cloudflare.com/privacypolicy/</a></li><li>RevenueCat, Inc.（購入状態の管理） <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a></li></ul>
+<h2>データの削除</h2><p>端末内のデータは、アプリを削除すると消えます。AI送信への同意は設定画面から取り消せます。購入履歴はApple・Google・RevenueCatの規約に従って保持されます。</p>
+<h2>お問い合わせ</h2><p>メール: burningtribe.apps@gmail.com</p><p>運営者: 株式会社バーニングトライブ</p><p>Bundle ID: tokyo.burningtribe.keizainews</p>
+</main></body></html>

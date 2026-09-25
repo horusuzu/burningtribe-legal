@@ -23,22 +23,23 @@
 </head>
 <body>
   <div class="container">
-    <a class="back" href="../">← アプリ一覧</a>
+    <a class="back" href="../index.html">← アプリ一覧</a>
     <h1>プライバシーポリシー</h1>
-    <p class="meta">ビジネス文書検定 &nbsp;|&nbsp; 最終更新日: 2026年7月28日</p>
-    <p>対象アプリ名: ビジネス文書検定試験対策</p>
+    <p class="meta">ビジネス文書検定 &nbsp;|&nbsp; 最終更新日: 2026年7月29日</p>
+    <p>対象アプリ名: ビジネス文書検定（Android package: <code>com.burningtribe.businessdocument</code>）</p>
 
     <h2>1. 収集する情報</h2>
-    <p>対象アプリは「ビジネス文書検定」（Android package: <code>com.burningtribe.businessdocument</code>）です。学習進捗、正誤・復習状態、設定、外部AI送信への同意状態を端末内に保存します。</p>
+    <p>学習進捗、正誤・復習状態、設定、外部AI送信への同意状態を端末内に保存します。自由入力、苦手ポイント、実際の文書、氏名、勤務先、顧客・従業員・取引先情報、アカウント、非公開文書および個人情報は、外部AIへ送信するために収集しません。</p>
     <h2>2. サブスクリプション情報</h2>
-    <p>購入、復元、購読状態の処理にはRevenueCatおよびApple App Store・Google Playの課金基盤を利用します。決済情報は各ストアが処理し、RevenueCatのプライバシーポリシーが適用されます。</p>
+    <p>購入、復元、購読状態の処理にはRevenueCatおよびApple App Store・Google Playの課金基盤を利用します。RevenueCatでは、購入履歴、ストアから提供される購入トークンおよび匿名のアプリ利用者識別子を、購入・復元・購読権限の確認のために処理します。決済情報は各ストアが処理し、RevenueCatおよび各ストアのプライバシーポリシーが適用されます。</p>
     <h2>3. 明示同意による外部AIと回答報告</h2>
-    <p>利用者が明示的に同意した場合に限り、質問と必要な学習文脈をCloudflare Workers経由で構成済みのAIサービスへ送信します。回答生成、品質・安全性の確認、不正利用防止に利用し、AI回答の報告時は同意を前提に報告理由・質問・回答を報告受信先へ送信します。</p>
+    <p>利用者が明示的に同意した場合に限り、固定クイック学習プロンプトと固定の学習指示をCloudflare Workers経由でGoogle Geminiへ送信し、一般的な学習支援の回答を生成します。自由入力、苦手ポイント、実際の文書および個人情報は外部へ送信せず、端末内の学習ガイドで処理します。送信への同意は端末内に保存され、同意しない場合または同意をリセットした場合は外部送信を行いません。</p>
+    <p>外部AIの回答を利用者が報告する場合は、同意を前提に、アプリ識別子（<code>123-business-document</code>）、重複防止用のランダムな報告ID、選択した報告理由、固定クイック学習プロンプトおよびAI回答を、Cloudflare Workers経由で開発者の報告受信先へ送信します。報告理由は「不正確」または「有害・不適切」です。自由入力や実際の文書は報告対象に含めません。</p>
     <h2>4. 第三者サービス</h2>
-    <p>RevenueCat、Apple App Store、Google Play、Cloudflare Workers、構成済みのAIサービスおよび回答報告受信先については、各事業者のプライバシーポリシーが適用されます。</p>
+    <p>RevenueCat、Apple App Store、Google Play、Cloudflare Workers、Google Geminiおよび回答報告受信先については、各事業者のプライバシーポリシーが適用されます。</p>
 
     <h2>5. データの削除</h2>
-    <p>端末内データは同意のリセットまたはアプリの削除で削除できます。RevenueCat、ストア、Cloudflare Workers、外部AI処理および報告受信先で処理されるデータの保存期間は各事業者のポリシーまたは処理に必要な期間に従います。削除依頼は下記連絡先へお願いします。</p>
+    <p>端末内データは、アプリ内で外部AI送信の同意をリセットするか、アプリを削除することで削除できます。RevenueCat、ストア、Cloudflare Workers、Google Geminiおよび報告受信先で処理されるデータの保存期間は、各事業者のポリシーまたは処理に必要な期間に従います。削除依頼は下記連絡先へお願いします。</p>
 
     <h2>6. お問い合わせ</h2>
     <p>メール: <a href="mailto:burningtribe.apps@gmail.com">burningtribe.apps@gmail.com</a><br>
