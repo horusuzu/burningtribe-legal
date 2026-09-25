@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プライバシーポリシー — Linuxコマンド実践ラボ</title>
+  <style>
+    :root {
+      --bg: #0d1117; --surface: #161b22; --border: #30363d;
+      --text: #e6edf3; --muted: #8b949e; --accent: #58a6ff; --max: 720px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif; line-height: 1.75; padding: 2rem 1.25rem 5rem; }
+    .container { max-width: var(--max); margin: 0 auto; }
+    h1 { font-size: 1.75rem; font-weight: 900; margin-bottom: 0.25rem; }
+    .meta { color: var(--muted); font-size: 0.875rem; margin-bottom: 2.5rem; }
+    h2 { font-size: 1.1rem; font-weight: 700; margin: 2rem 0 0.5rem; border-left: 3px solid var(--accent); padding-left: 0.75rem; }
+    p { color: var(--muted); margin-bottom: 0.75rem; }
+    a { color: var(--accent); }
+    hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
+    .back { display: inline-block; color: var(--accent); font-size: 0.875rem; margin-bottom: 1.5rem; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a class="back" href="../">← アプリ一覧</a>
+    <h1>プライバシーポリシー</h1>
+    <p class="meta">Linuxコマンド実践ラボ &nbsp;|&nbsp; 最終更新日: 2026年9月24日</p>
+
+    <h2>1. 収集する情報</h2>
+    <p>対象アプリは「Linuxコマンド実践ラボ」（iOS Bundle ID / Android package: <code>tokyo.burningtribe.linuxcommandlab</code>）です。アカウント登録はありません。学習進捗、演習の正誤・復習状態、学習プランの回答、設定、外部AI送信への同意状態を端末内に保存します。これらは当社のサーバーへ送信しません。</p>
+
+    <h2>2. サブスクリプション情報</h2>
+    <p>購入、復元、購読状態の確認にはRevenueCatおよびApple App Store・Google Playの課金基盤を利用します。決済情報は各ストアが処理し、当社は受け取りません。RevenueCatは購読状態の管理のため、アプリ内で自動生成される匿名の識別子と購入履歴を処理し、RevenueCatのプライバシーポリシーが適用されます。</p>
+
+    <h2>3. 明示同意による外部AIと回答報告</h2>
+    <p>学習ガイド（プレミアム機能）では、利用者が明示的に同意した場合に限り、アプリが用意した固定のクイック学習プロンプトと学習用の安全指示を、当社が運営するCloudflare Workers経由でGoogleの生成AI（Google Gemini）へ送信して回答を作成します。自由入力、苦手ポイント、コマンド、ログ、設定、認証情報などは外部へ送信せず、端末内で処理します。同意しない場合は外部へ送信せず、端末内の学習ガイドを表示します。同意は設定画面からいつでも取り消せます。</p>
+    <p>AIの回答を利用者が任意に報告する場合は、同意を前提に、アプリ識別子、重複防止用の報告ID、報告理由、固定プロンプト、AI回答をCloudflare Workers経由で当社の報告受信先へ送信します。</p>
+
+    <h2>4. 自社アプリのおすすめ表示（無料でご利用の場合）</h2>
+    <p>無料でご利用の場合、当社の他のアプリを紹介する自社広告を表示します。表示する広告の一覧の取得と表示回数の計測のため、当社のサーバー（ads.burningtribe.tokyo）へ、本アプリの識別名、表示した広告の紹介先、端末の種類（iOS／Android）を送信します。広告IDや端末・利用者を識別する情報は送信しません。広告をタップした場合は、App StoreまたはGoogle Playの紹介ページを直接開きます。プレミアムをご利用中、画面を表示していないとき、アプリがバックグラウンドにあるときは、これらの通信を行いません。第三者広告SDK、広告ID（IDFA等）、App Tracking Transparency（ATT）は使用せず、他社のアプリやウェブサイトをまたいだ追跡は行いません。</p>
+
+    <h2>5. 通知</h2>
+    <p>無料トライアル中の場合、終了前のお知らせを端末内で予約することがあります。通知の許可は端末の設定で変更できます。通知のために当社のサーバーへ情報を送信することはありません。</p>
+
+    <h2>6. 第三者サービス</h2>
+    <p>Apple App Store・Google Play（決済処理）、RevenueCat（購読状態の管理）、Cloudflare（通信の中継）、Google（Gemini API、同意した場合のみ）を利用し、各社のプライバシーポリシーが適用されます。</p>
+
+    <h2>7. データの保持期間と削除</h2>
+    <p>端末内の学習進捗、正誤・復習状態、設定は、端末のデータ削除または本アプリのアンインストールまで端末内に保持されます。外部AI送信への同意状態はアプリ内の設定からいつでもリセットでき、リセット後は再同意まで外部送信を行いません。</p>
+    <p>外部AIへの質問・回答は、回答生成のためCloudflare Workersで一時的に処理されます。当社は通常のAIリクエストおよび回答をWorkerのストレージへ保存しません。AIサービスによる処理上の保持は、当該事業者の利用規約およびプライバシーポリシーに従います。</p>
+    <p>利用者が任意に送信するAI回答の報告は、品質・安全性の確認、不正利用防止、問い合わせ対応のため、受信日から最長90日間保持し、その後削除します。法令上の義務、権利の保全、不正利用または安全・セキュリティ調査に必要な場合に限り、必要な期間延長して保持します。</p>
+    <p>購入、返金およびサブスクリプション情報は、Apple App Store、Google PlayおよびRevenueCatが各事業者のポリシーや法令上の保存義務に基づき保持します。当社はこれら第三者が保持するデータを直接削除できません。</p>
+    <p>削除の相談は、送信時期や報告理由など照合に必要な範囲の情報を添えて下記へご連絡ください。照合できた対象データは、法令上の保存義務や不正利用・セキュリティ調査への対応に必要な場合を除き、照合完了後30日以内に削除します。</p>
+
+    <h2>8. お問い合わせ</h2>
+    <p>メール: <a href="mailto:burningtribe.apps@gmail.com">burningtribe.apps@gmail.com</a><br>
+    運営者: 株式会社バーニングトライブ<br>
+    Bundle ID / package: tokyo.burningtribe.linuxcommandlab</p>
+
+    <hr>
+    <p style="font-size:0.8rem;">© 2026 株式会社バーニングトライブ</p>
+  </div>
+</body>
+</html>
