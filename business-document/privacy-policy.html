@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>プライバシーポリシー — ビジネス文書検定</title>
+  <title>プライバシーポリシー — ビジネス文書検定試験対策</title>
   <style>
     :root {
       --bg: #0d1117; --surface: #161b22; --border: #30363d;
@@ -25,29 +25,36 @@
   <div class="container">
     <a class="back" href="../index.html">← アプリ一覧</a>
     <h1>プライバシーポリシー</h1>
-    <p class="meta">ビジネス文書検定 &nbsp;|&nbsp; 最終更新日: 2026年7月29日</p>
-    <p>対象アプリ名: ビジネス文書検定（Android package: <code>com.burningtribe.businessdocument</code>）</p>
+    <p class="meta">ビジネス文書検定試験対策 &nbsp;|&nbsp; 最終更新日: 2026年9月24日</p>
+    <p>対象アプリ名: ビジネス文書検定試験対策（iOS Bundle ID／Android package: <code>com.burningtribe.businessdocument</code>）</p>
 
-    <h2>1. 収集する情報</h2>
-    <p>学習進捗、正誤・復習状態、設定、外部AI送信への同意状態を端末内に保存します。自由入力、苦手ポイント、実際の文書、氏名、勤務先、顧客・従業員・取引先情報、アカウント、非公開文書および個人情報は、外部AIへ送信するために収集しません。</p>
+    <h2>1. 端末内に保存する情報</h2>
+    <p>学習進捗、演習の正誤・復習状態、オンボーディングの回答、設定、外部AI送信への同意状態を端末内に保存します。これらは当社のサーバーへ送信しません。アカウント登録はなく、氏名・メールアドレス・勤務先などの個人情報を入力させることはありません。</p>
+
     <h2>2. サブスクリプション情報</h2>
-    <p>購入、復元、購読状態の処理にはRevenueCatおよびApple App Store・Google Playの課金基盤を利用します。RevenueCatでは、購入履歴、ストアから提供される購入トークンおよび匿名のアプリ利用者識別子を、購入・復元・購読権限の確認のために処理します。決済情報は各ストアが処理し、RevenueCatおよび各ストアのプライバシーポリシーが適用されます。</p>
-    <h2>3. 明示同意による外部AIと回答報告</h2>
-    <p>利用者が明示的に同意した場合に限り、固定クイック学習プロンプトと固定の学習指示をCloudflare Workers経由でGoogle Geminiへ送信し、一般的な学習支援の回答を生成します。自由入力、苦手ポイント、実際の文書および個人情報は外部へ送信せず、端末内の学習ガイドで処理します。送信への同意は端末内に保存され、同意しない場合または同意をリセットした場合は外部送信を行いません。</p>
-    <p>外部AIの回答を利用者が報告する場合は、同意を前提に、アプリ識別子（<code>123-business-document</code>）、重複防止用のランダムな報告ID、選択した報告理由、固定クイック学習プロンプトおよびAI回答を、Cloudflare Workers経由で開発者の報告受信先へ送信します。報告理由は「不正確」または「有害・不適切」です。自由入力や実際の文書は報告対象に含めません。</p>
-    <h2>4. 第三者サービス</h2>
-    <p>RevenueCat、Apple App Store、Google Play、Cloudflare Workers、Google Geminiおよび回答報告受信先については、各事業者のプライバシーポリシーが適用されます。</p>
+    <p>購入、復元、購読状態の確認にはRevenueCat（RevenueCat, Inc.）およびApple App Store・Google Playの課金基盤を利用します。RevenueCatでは、購入履歴、ストアから提供される購入トークンおよび匿名のアプリ利用者識別子を、購入・復元・購読権限の確認のために処理します。決済情報は各ストアが処理し、当社は取得しません。</p>
 
-    <h2>5. データの削除</h2>
-    <p>端末内データは、アプリ内で外部AI送信の同意をリセットするか、アプリを削除することで削除できます。RevenueCat、ストア、Cloudflare Workers、Google Geminiおよび報告受信先で処理されるデータの保存期間は、各事業者のポリシーまたは処理に必要な期間に従います。削除依頼は下記連絡先へお願いします。</p>
+    <h2>3. 外部AI（Google Gemini）への送信と回答の報告</h2>
+    <p>学習ガイドのAI回答はプレミアム会員向けの機能です。アプリ内の確認画面で送信先と送信内容を示し、利用者が同意した場合に限り、「定番の相談」（アプリにあらかじめ用意した4種類の固定文）と、学習支援に限定するための固定の指示文を、当社のサーバー（Cloudflare Workers）経由でGoogleの生成AI（Google Gemini）へ送信して回答を作成します。自由入力の内容、学習履歴、氏名などの個人情報は送信しません（自由入力は端末内だけで処理します）。同意しない場合は外部へ送信せず、端末内のガイドで回答します。同意は設定画面からいつでも取り消せます。</p>
+    <p>AIの回答を利用者が「不正確」または「有害・不適切」として報告した場合に限り、アプリ識別子、重複防止用のランダムな報告ID、選んだ理由、相談の固定文およびその回答を、Cloudflare Workers経由で開発者の報告受信先へ送信します。</p>
 
-    <h2>6. お問い合わせ</h2>
+    <h2>4. 自社広告（当社アプリの紹介）</h2>
+    <p>無料版では、学習画面に当社の他のアプリを紹介するバナー（自社広告）を表示します。表示する内容を取得するため、また表示回数を集計するため、本アプリの識別子・紹介先アプリ・端末の種類（iOS／Android）を当社のサーバー（ads.burningtribe.tokyo）へ送信します。広告ID・端末IDなど利用者を識別する情報は送信しません。プレミアム会員、購読状態の確認前、画面が表示されていないとき、アプリがバックグラウンドにあるときは通信しません。</p>
+    <p>本アプリは第三者の広告SDK（Google AdMob 等）や解析・トラッキングSDKを使用せず、広告ID（IDFA／Android 広告ID）を取得せず、App Tracking Transparency による許可も求めません。他社のアプリやウェブサイトをまたいだトラッキングは行いません。</p>
+
+    <h2>5. 第三者サービス</h2>
+    <p>RevenueCat、Apple App Store、Google Play、Cloudflare Workers、Google Geminiについては、各事業者のプライバシーポリシーが適用されます。</p>
+
+    <h2>6. データの削除</h2>
+    <p>端末内のデータは、アプリを削除すると削除されます。外部AIへの送信の同意は設定画面から取り消せます。RevenueCat、ストア、Cloudflare Workers、Google Geminiおよび報告受信先で処理されるデータの保存期間は、各事業者のポリシーまたは処理に必要な期間に従います。削除のご依頼は下記連絡先へお願いします。</p>
+
+    <h2>7. お問い合わせ</h2>
     <p>メール: <a href="mailto:burningtribe.apps@gmail.com">burningtribe.apps@gmail.com</a><br>
-    開発者: バーニングトライブ<br>
+    事業者: 株式会社バーニングトライブ<br>
     Bundle ID: com.burningtribe.businessdocument</p>
 
     <hr>
-    <p style="font-size:0.8rem;">© 2026 バーニングトライブ</p>
+    <p style="font-size:0.8rem;">© 2026 株式会社バーニングトライブ</p>
   </div>
 </body>
 </html>
