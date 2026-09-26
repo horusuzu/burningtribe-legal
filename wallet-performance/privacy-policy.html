@@ -1,47 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>プライバシーポリシー — ウォレット成績チェッカー</title>
-  <style>
-    :root {
-      --bg: #0d1117; --surface: #161b22; --border: #30363d;
-      --text: #e6edf3; --muted: #8b949e; --accent: #58a6ff; --max: 720px;
-    }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif; line-height: 1.75; padding: 2rem 1.25rem 5rem; }
-    .container { max-width: var(--max); margin: 0 auto; }
-    h1 { font-size: 1.75rem; font-weight: 900; margin-bottom: 0.25rem; }
-    .meta { color: var(--muted); font-size: 0.875rem; margin-bottom: 2.5rem; }
-    h2 { font-size: 1.1rem; font-weight: 700; margin: 2rem 0 0.5rem; border-left: 3px solid var(--accent); padding-left: 0.75rem; }
-    p { color: var(--muted); margin-bottom: 0.75rem; }
-    a { color: var(--accent); }
-    hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
-    .back { display: inline-block; color: var(--accent); font-size: 0.875rem; margin-bottom: 1.5rem; text-decoration: none; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー | ウォレット成績チェッカー</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif; line-height: 1.8; color: #1f2937; background: #fff; margin: 0; padding: 24px 16px; }
+  main { max-width: 760px; margin: 0 auto; }
+  h1 { font-size: 1.5rem; } h2 { font-size: 1.1rem; margin-top: 2em; border-bottom: 1px solid #e5e7eb; padding-bottom: 4px; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.95rem; } th, td { border: 1px solid #e5e7eb; padding: 8px; text-align: left; vertical-align: top; }
+</style>
 </head>
 <body>
-  <div class="container">
-    <a class="back" href="../">← アプリ一覧</a>
-    <h1>プライバシーポリシー</h1>
-    <p class="meta">ウォレット成績チェッカー &nbsp;|&nbsp; 最終更新日: 2026年7月24日</p>
+<main>
+<h1>プライバシーポリシー</h1>
+<p>株式会社バーニングトライブ(以下「当社」)は、iOS/Android アプリ「ウォレット成績チェッカー」(以下「本アプリ」)における利用者情報の取り扱いを次のとおり定めます。</p>
 
-    <h2>1. 収集する情報</h2>
-    <p>本アプリは、ユーザーが入力した公開ウォレットアドレスをもとに、公開ブロックチェーンデータをブロックチェーンデータAPI経由で取得して成績を表示します。入力されたアドレスと表示設定は端末内にのみ保存され、当社がアカウントとして収集・保管することはありません。秘密鍵・シードフレーズを扱う機能はありません。</p>
-    <h2>2. サブスクリプション情報</h2>
-    <p>本アプリはRevenueCatを通じてサブスクリプションを提供します。購入状態の管理のため、購入履歴と端末識別子がRevenueCatに送信されます。RevenueCatのプライバシーポリシーが適用されます。</p>
-    <h2>3. 第三者サービス</h2>
-    <p>Google Play（決済処理）、ブロックチェーンデータ提供API（公開アドレスの照会）の各プライバシーポリシーが適用されます。広告SDKは使用していません。</p>
-    <h2>4. データの削除</h2>
-    <p>アプリのアンインストールにより、端末内に保存されたアドレス・設定はすべて削除されます。課金関連データの削除をご希望の場合は下記までご連絡ください。</p>
-    <h2>5. お問い合わせ</h2>
-    <p>メール: <a href="mailto:burningtribesuzu@gmail.com">burningtribesuzu@gmail.com</a><br>
-    開発者: バーニングトライブ<br>
-    Package: com.burningtribe.walletperformance</p>
+<h2>1. 取得しない情報</h2>
+<p>本アプリは秘密鍵、シードフレーズ、ウォレットのパスワードを求めず、取得・保存しません。ウォレットの接続、送金、交換、取引の実行は行いません。</p>
 
-    <hr>
-    <p style="font-size:0.8rem;">© 2026 バーニングトライブ</p>
-  </div>
+<h2>2. 端末内に保存する情報</h2>
+<p>初回の注意事項への同意、初回案内の表示済みフラグ、外部AI送信への同意の有無、レビュー依頼の表示記録は、利用者の端末内にだけ保存します。分析結果はアプリの起動中だけ保持し、端末にも当社サーバーにも保存しません。アプリを削除すると消去されます。</p>
+
+<h2>3. 外部に送信する情報と送信先</h2>
+<table>
+<tr><th>機能</th><th>送信する内容</th><th>送信先</th><th>送信する条件</th></tr>
+<tr><td>ウォレットの分析</td><td>入力した公開ウォレットアドレス、チェーン、日付範囲、取得件数の上限、デモモードの有無</td><td>当社の分析サーバー。分析サーバーは公開ブロックチェーンの取引データを取得するため、アドレスを Moralis(Moralis Web3 Technology AG)の API へ送ります</td><td>「分析」を押したときだけ。デモモードでは Moralis へは送りません。当社は分析のためにだけ使い、分析結果を保存しません</td></tr>
+<tr><td>AIモード(オンラインAI)</td><td>分析結果の集計済み指標(勝率・実現損益・照合件数・データ信頼度など)、判定ラベルとその理由、警告メッセージ(最大5件)。ウォレットアドレスと個々の取引履歴は送りません</td><td>当社の中継サーバー(Cloudflare Workers)を経由して Google LLC の生成AI「Gemini」</td><td>プレミアムプランの利用中で、アプリ内の同意画面で「同意してAIに送る」を選んだ場合のみ。同意は設定画面の「外部AIへの送信の同意を取り消す」でいつでも取り消せます。同意しない場合は端末内の要約だけを表示します</td></tr>
+<tr><td>サブスクリプション</td><td>購入・復元の記録と、購入者を区別するための匿名のアプリ内ID</td><td>Apple(App Store)、Google(Google Play)、RevenueCat, Inc.(購入状態の確認)</td><td>プラン画面・AIモード・紹介枠の表示時、購入・復元の操作時</td></tr>
+<tr><td>当社アプリの紹介枠</td><td>本アプリの識別子、OSの種類、表示・タップした紹介先</td><td>当社の配信サーバー(ads.burningtribe.tokyo)</td><td>プレミアムプランを利用していないことが確認できたときに、紹介枠のある画面が表示されている間だけ。購読者、購読状態の確認前、アプリがバックグラウンドのときは通信しません</td></tr>
+</table>
+<p>本アプリは第三者の広告配信SDK(AdMob など)や解析SDKを組み込んでおらず、広告ID(IDFA / Android 広告ID)を取得しません。利用者を他社のアプリやウェブサイトをまたいで追跡(トラッキング)しません。</p>
+
+<h2>4. 通知</h2>
+<p>ストア上の無料トライアル付きでプレミアムを購入した場合に限り、トライアル期間の案内を端末内のローカル通知で予約します。通知の内容は外部へ送信しません。</p>
+
+<h2>5. お問い合わせ</h2>
+<p>アプリ内の「問い合わせ」は、利用者の端末のメールアプリまたは LINE を開きます。送信するかどうかと内容は利用者が決めます。お送りいただいた内容は、お問い合わせへの回答と本アプリの改善にだけ使います。</p>
+
+<h2>6. 利用目的・第三者提供</h2>
+<p>取得した情報は、ウォレットの分析、AIモードの要約、サブスクリプションの提供、当社アプリの紹介枠の表示と表示回数の把握、お問い合わせへの回答のためにだけ使います。法令に基づく場合を除き、上記の送信先以外に提供しません。送信先での取り扱いは各社のプライバシーポリシーに従います(Moralis: https://moralis.com/privacy-policy/ 、Google: https://policies.google.com/privacy 、RevenueCat: https://www.revenuecat.com/privacy 、Cloudflare: https://www.cloudflare.com/privacypolicy/ )。</p>
+
+<h2>7. 分析結果について</h2>
+<p>分析結果は公開ブロックチェーン上の過去の取引から計算した統計で、将来の成績を保証するものではありません。本アプリは投資助言、売買の推奨、取引の模倣を勧めるものではありません。</p>
+
+<h2>8. データの削除</h2>
+<p>端末内の情報はアプリを削除すると消去されます。当社は分析したアドレスや結果を保存していませんが、ご不明な点は下記までお問い合わせください。</p>
+
+<h2>9. 改定</h2>
+<p>本ポリシーを改定する場合は、このページで公表します。</p>
+
+<h2>10. お問い合わせ先</h2>
+<p>株式会社バーニングトライブ<br>メール: burningtribesuzu@gmail.com</p>
+
+<p>最終更新日: 2026年9月24日</p>
+</main>
 </body>
 </html>
