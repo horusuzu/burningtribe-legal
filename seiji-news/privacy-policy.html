@@ -1,8 +1,53 @@
 <!doctype html>
-<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>プライバシーポリシー | 政治ニュースまとめ</title><style>body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.8;color:#172033;max-width:760px;margin:auto;padding:32px 20px}h1{line-height:1.35}a{color:#0759b8}</style></head><body>
-<main><h1>プライバシーポリシー — 政治ニュースまとめ</h1><p>最終更新日: 2026年9月13日</p>
-<h2>収集する情報</h2><p>本アプリは、AI解説に必要なニュース本文・要約テキストを除き、ユーザーの個人情報をサーバーに送信しません。ブックマーク等のデータは端末内に保存されます。本アプリに広告は表示されません。</p>
-<h2>第三者サービス</h2><ul><li>RevenueCat（サブスクリプション課金管理）: 購入・復元処理のために利用します。<a href="https://www.revenuecat.com/privacy">RevenueCat Privacy Policy</a></li><li>Cloudflare Worker / Gemini API（AI解説）: APIキーはアプリ内に保存しません。</li><li>OpenAI, L.L.C.（予備）: Googleが応答できないときの回答生成に利用。送信・処理される情報は同じ入力内容・生成出力（OpenAIの学習に利用されることがあります）。</li></ul>
-<h2>AIの送信先と予備の送信先</h2><p>AI機能に入力したテキストと、対象機能で選択した画像は、運営者のCloudflare Workerを経由して Google LLC（米国）の Gemini API へ送信します。通常はここだけで処理します。</p><p>Google側の障害や上限超過で応答が得られないときに限り、予備として OpenAI, L.L.C.（米国）へ同じ内容を送って回答を作ります。予備を利用した場合、送信した入力内容と生成された出力は、OpenAIがサービスやモデルの改善・学習に利用することがあります。いずれの場合も、運営者から即時の削除を保証することはできません。</p><p>このため、氏名・住所・電話番号・メールアドレスなどの連絡先、他人が写った画像、病歴・信条といった要配慮個人情報は入力しないでください。AI機能の利用は任意です。同意しない場合、またはAI機能を使わない場合、上記の送信は行われません。</p>
-<h2>データの削除</h2><p>アプリのアンインストールまたは設定画面から全データを削除できます。</p>
-<h2>お問い合わせ</h2><p>メール: burningtribesuzu@gmail.com<br>開発者: バーニングトライブ</p><p>Bundle ID: tokyo.burningtribe.seijinews</p></main></body></html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー | 政治ニュースまとめ</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif; line-height: 1.8; color: #1f2937; background: #fff; margin: 0; padding: 24px 16px; }
+  main { max-width: 760px; margin: 0 auto; }
+  h1 { font-size: 1.5rem; } h2 { font-size: 1.1rem; margin-top: 2em; border-bottom: 1px solid #e5e7eb; padding-bottom: 4px; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.95rem; } th, td { border: 1px solid #e5e7eb; padding: 8px; text-align: left; vertical-align: top; }
+</style>
+</head>
+<body>
+<main>
+<h1>プライバシーポリシー</h1>
+<p>株式会社バーニングトライブ(以下「当社」)は、iOS/Android アプリ「政治ニュースまとめ」(以下「本アプリ」)における利用者情報の取り扱いを次のとおり定めます。</p>
+
+<h2>1. 端末内に保存する情報</h2>
+<p>ブックマーク(記事の見出し・概要・日付・出典・元記事URLの写しを含む)、初回案内の表示済みフラグ、外部AI送信への同意の有無、レビュー依頼の表示記録は、利用者の端末内にだけ保存します。当社のサーバーには送信しません。アプリを削除すると消去されます。</p>
+
+<h2>2. 外部に送信する情報と送信先</h2>
+<table>
+<tr><th>機能</th><th>送信する内容</th><th>送信先</th><th>送信する条件</th></tr>
+<tr><td>ニュースの取得</td><td>NHKの公開RSSフィードのURL(利用者の情報は含みません)</td><td>日本放送協会(NHK)のWebサーバー。端末から直接取得できなかったときだけ、公開の中継サービス allorigins.win を経由します</td><td>アプリの起動時と「更新」を押したとき</td></tr>
+<tr><td>AI要約・AI解説</td><td>選んだニュースの見出し・概要(NHKのRSSに載っている文)・カテゴリと、選んだ解説の深さ</td><td>当社の中継サーバー(Cloudflare Workers)を経由して Google LLC の生成AI「Gemini」</td><td>プレミアムプランの利用中で、アプリ内の同意画面で「同意して使う」を選んだ場合のみ。お名前・端末の識別子・ブックマーク・検索語は送信しません。同意は設定画面の「外部AIへの送信の同意を取り消す」でいつでも取り消せます。</td></tr>
+<tr><td>サブスクリプション</td><td>購入・復元の記録と、購入者を区別するための匿名のアプリ内ID</td><td>Apple(App Store / StoreKit)、Google(Google Play)、RevenueCat, Inc.(購入状態の確認)</td><td>アプリの起動時・前面に戻ったとき、プラン画面の表示時、購入・復元の操作時</td></tr>
+<tr><td>当社アプリの紹介枠</td><td>本アプリの識別子、OSの種類、表示・タップした紹介先</td><td>当社の配信サーバー(ads.burningtribe.tokyo)</td><td>プレミアムプランを利用していないことが確認できたときに、紹介枠が画面に表示されている間だけ。購読者、購読状態の確認前、アプリがバックグラウンドのときは通信しません。</td></tr>
+</table>
+<p>本アプリは第三者の広告配信SDK(AdMob など)や解析SDKを組み込んでおらず、広告ID(IDFA / Android 広告ID)を取得しません。RevenueCat の端末識別子の自動収集も無効にしています。利用者を他社のアプリやウェブサイトをまたいで追跡(トラッキング)しません。</p>
+
+<h2>3. 通知</h2>
+<p>月額プランをストア上の無料トライアル付きで購入した場合に限り、トライアル期間の案内を端末内のローカル通知で予約します。通知の内容は外部へ送信しません。</p>
+
+<h2>4. お問い合わせ</h2>
+<p>設定画面の「フィードバック」は、利用者の端末のメールアプリを開きます。送信するかどうかと内容は利用者が決めます。お送りいただいたメールアドレスと内容は、お問い合わせへの回答と本アプリの改善にだけ使います。</p>
+
+<h2>5. 利用目的・第三者提供</h2>
+<p>取得した情報は、ニュースの表示、AI要約・AI解説の作成、サブスクリプションの提供、当社アプリの紹介枠の表示と表示回数の把握、お問い合わせへの回答のためにだけ使います。法令に基づく場合を除き、上記の送信先以外に提供しません。送信先での取り扱いは各社のプライバシーポリシーに従います(Google: https://policies.google.com/privacy 、RevenueCat: https://www.revenuecat.com/privacy 、Cloudflare: https://www.cloudflare.com/privacypolicy/ )。</p>
+
+<h2>6. ニュースとAI解説について</h2>
+<p>ニュースの見出しと概要はNHKの公開RSSから表示し、全文は掲載せず元記事へのリンクを表示します。AI解説は中立・事実ベースの方針で作成しますが、誤りを含むことがあります。重要な判断は元記事や公式発表をご確認ください。</p>
+
+<h2>7. 改定</h2>
+<p>本ポリシーを改定する場合は、このページで公表します。</p>
+
+<h2>8. お問い合わせ先</h2>
+<p>株式会社バーニングトライブ<br>メール: burningtribesuzu@gmail.com</p>
+
+<p>最終更新日: 2026年9月24日</p>
+</main>
+</body>
+</html>
