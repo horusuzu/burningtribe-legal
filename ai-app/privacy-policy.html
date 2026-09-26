@@ -2,47 +2,142 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>プライバシーポリシー — AIラボ - AI活用マガジン</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>プライバシーポリシー - AIラボ</title>
   <style>
-    :root {
-      --bg: #0d1117; --surface: #161b22; --border: #30363d;
-      --text: #e6edf3; --muted: #8b949e; --accent: #58a6ff; --max: 720px;
-    }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif; line-height: 1.75; padding: 2rem 1.25rem 5rem; }
-    .container { max-width: var(--max); margin: 0 auto; }
-    h1 { font-size: 1.75rem; font-weight: 900; margin-bottom: 0.25rem; }
-    .meta { color: var(--muted); font-size: 0.875rem; margin-bottom: 2.5rem; }
-    h2 { font-size: 1.1rem; font-weight: 700; margin: 2rem 0 0.5rem; border-left: 3px solid var(--accent); padding-left: 0.75rem; }
-    p { color: var(--muted); margin-bottom: 0.75rem; }
-    a { color: var(--accent); }
-    hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
-    .back { display: inline-block; color: var(--accent); font-size: 0.875rem; margin-bottom: 1.5rem; text-decoration: none; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+      background: #FAF8FF;
+      color: #1A1035;
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+      padding: env(safe-area-inset-top, 0px) 20px env(safe-area-inset-bottom, 20px);
+    }
+    .container { max-width: 600px; margin: 0 auto; padding: 24px 0 40px; }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      min-height: 44px;
+      margin-bottom: 12px;
+      color: #6C3CE1;
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    h1 {
+      font-size: 1.5rem; font-weight: 800;
+      background: linear-gradient(135deg, #6C3CE1, #8B5CF6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 8px;
+    }
+    .last-updated { font-size: 0.82rem; color: #757B87; margin-bottom: 28px; }
+    h2 {
+      font-size: 1.1rem; font-weight: 700;
+      color: #6C3CE1;
+      margin: 28px 0 10px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #E8E0F5;
+    }
+    p { margin-bottom: 12px; font-size: 0.9rem; }
+    ul { margin: 8px 0 12px 20px; font-size: 0.9rem; }
+    li { margin-bottom: 4px; }
+    .highlight {
+      background: rgba(108, 60, 225, 0.1);
+      border-left: 3px solid #6C3CE1;
+      padding: 12px 16px;
+      border-radius: 0 10px 10px 0;
+      margin: 16px 0;
+      font-size: 0.88rem;
+    }
+    .contact-info {
+      background: #F3EEFF;
+      border-radius: 12px;
+      padding: 16px;
+      margin-top: 20px;
+      font-size: 0.88rem;
+    }
+    .contact-info p { margin-bottom: 4px; }
+    a { color: #6C3CE1; text-decoration: none; }
+    a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
   <div class="container">
-    <a class="back" href="../">← アプリ一覧</a>
+    <a class="back-link" href="index.html" onclick="if (history.length > 1) { history.back(); return false; }">← アプリに戻る</a>
     <h1>プライバシーポリシー</h1>
-    <p class="meta">AIラボ - AI活用マガジン &nbsp;|&nbsp; 最終更新日: 2026年8月11日</p>
+    <p class="last-updated">最終更新日：2026年9月24日</p>
+
+    <p>株式会社バーニングトライブ（以下「当社」）は、「AIラボ - AI活用マガジン」アプリ（以下「本アプリ」）におけるユーザーの個人情報およびプライバシーの保護に関して、以下のとおりプライバシーポリシーを定めます。</p>
+
     <h2>1. 収集する情報</h2>
-    <p>記事の閲覧履歴、ブックマーク、メモ、読書統計およびアプリ設定は端末内に保存され、当社のサーバーへ送信されません。提出対象のiOS/AndroidアプリではAIチャットを提供せず、ユーザー入力をAI処理サービスへ送信しません。</p>
-    <h2>2. サブスクリプション情報</h2>
-    <p>本アプリはAppleまたはGoogleのアプリ内課金とRevenueCatを利用して月額サブスクリプションを提供します。購入処理と権利状態の確認に必要な購入情報およびアプリ利用者識別子は各サービスで処理されます。当社はクレジットカード番号を取得しません。</p>
-    <h2>3. 第三者サービス</h2>
-    <p>RevenueCat（サブスクリプション管理）: <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a></p>
-    <p>Apple（App内課金）: <a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></p>
-    <p>Google Play（App内課金）: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
-    <p>Google AdMobその他の第三者広告SDKは使用しません。無料利用者には当社アプリの案内を表示する場合がありますが、計測用URLを経由せず、ユーザーが選択したときだけ各ストアの公式ページを開きます。</p>
-    <h2>4. データの削除</h2>
-    <p>アプリのアンインストールまたは設定画面から端末内データを削除できます。購入履歴は各ストアアカウントで管理されます。</p>
-    <h2>5. お問い合わせ</h2>
-    <p>メール: <a href="mailto:burningtribesuzu@gmail.com">burningtribesuzu@gmail.com</a><br>
-    開発者: バーニングトライブ<br>
-    Bundle ID: tokyo.burningtribe.ailab</p>
-    <hr>
-    <p style="font-size:0.8rem;">© 2026 バーニングトライブ</p>
+    <div class="highlight">記事の閲覧履歴、ブックマーク、メモ、読書統計およびアプリ設定は端末内に保存され、当社のサーバーへ送信されません。</div>
+    <p>本アプリは、以下の情報を端末内にのみ保存します：</p>
+    <ul>
+      <li>ブックマークした記事の情報</li>
+      <li>記事の閲覧履歴</li>
+      <li>読書統計（読了記事数、連続読了日数等）</li>
+      <li>アプリ設定（ダークモード、フォントサイズ、通知設定等）</li>
+      <li>ユーザーが作成した記事データ（CMS機能使用時）</li>
+    </ul>
+    <p>これらのデータは端末のlocalStorageに保存され、外部サーバーへの送信は行いません。</p>
+
+    <h2>2. 個人情報の収集について</h2>
+    <p>本アプリは以下を行いません：</p>
+    <ul>
+      <li>アカウント登録やログイン機能の提供</li>
+      <li>氏名、メールアドレス、電話番号等の個人情報の収集</li>
+      <li>位置情報の取得</li>
+      <li>連絡先、写真、カメラ等の端末機能へのアクセス</li>
+      <li>広告識別子の取得や第三者広告SDKによる広告配信</li>
+      <li>提出対象のiOS/AndroidアプリからAI処理サービスへの入力送信</li>
+    </ul>
+
+    <h2>3. 端末機能の使用</h2>
+    <p>本アプリは以下の端末機能を使用する場合があります：</p>
+    <ul>
+      <li><strong>通知機能</strong>：新着記事のお知らせと、ストアが無料トライアルを付けた購読の終了前のお知らせ（端末内で予約するローカル通知）のために使用します。ユーザーの許可を得た場合のみ有効になります。</li>
+      <li><strong>ネットワーク状態の確認</strong>：オフライン時の表示切替のために使用します。通信内容の収集は行いません。</li>
+      <li><strong>触覚フィードバック（Haptics）</strong>：操作時の触覚的なフィードバック提供のために使用します。</li>
+      <li><strong>アプリ内ブラウザ</strong>：外部リンクをアプリ内で表示するために使用します。</li>
+      <li><strong>キーボード制御</strong>：検索入力時のUI最適化のために使用します。</li>
+    </ul>
+
+    <h2>4. サブスクリプションと第三者サービス</h2>
+    <p>本アプリはAppleまたはGoogleのアプリ内課金とRevenueCatを利用して月額・年額の自動更新サブスクリプションを提供します。購入処理と権利状態の確認に必要な購入情報およびアプリ利用者識別子は各サービスで処理されます。当社はクレジットカード番号を取得しません。</p>
+    <ul>
+      <li><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy Policy</a></li>
+      <li><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a></li>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+    </ul>
+    <h2>5. 当社アプリの案内（自社広告）</h2>
+    <p>購読状態を確認できた無料利用者には、ホーム画面に当社の他アプリの案内を表示する場合があります。表示する案内の一覧を取得するため、アプリが画面に表示されているときに限り、当社の配信サーバー（ads.burningtribe.tokyo）へ本アプリの識別名と端末の種類（iOS / Android）を送信します。氏名・広告識別子・端末識別子は送信しません。通信の性質上、配信サーバーには接続元のIPアドレスが記録される場合があります。Premium購読中、購読状態の確認前、アプリがバックグラウンドにあるときは通信しません。案内を選択したときは、計測用URLを経由せず、Apple App StoreまたはGoogle Playの公式ページを開きます。Google AdMobその他の第三者広告SDKは使用しません。</p>
+
+    <h2>6. データの管理とセキュリティ</h2>
+    <p>記事の閲覧履歴等は端末のlocalStorageに保存されます。購入履歴は各ストアアカウントで管理されます。</p>
+    <ul>
+      <li>アプリを削除すると、保存されたすべてのデータが削除されます</li>
+      <li>ブラウザのデータ消去機能により、データが削除される場合があります</li>
+    </ul>
+
+    <h2>7. お子様のプライバシー</h2>
+    <p>本アプリは個人情報を収集しないため、年齢制限は設けておりません。ただし、コンテンツの性質上、AI技術に関する記事を掲載しているため、内容の理解には一定の判断能力が必要です。</p>
+
+    <h2>8. プライバシーポリシーの変更</h2>
+    <p>当社は、必要に応じて本ポリシーを変更することがあります。変更があった場合は、本アプリ内で通知いたします。変更後のポリシーは、本ページに掲載した時点で効力を生じるものとします。</p>
+
+    <h2>9. お問い合わせ</h2>
+    <p>本ポリシーに関するお問い合わせは、下記までご連絡ください。</p>
+    <div class="contact-info">
+      <p><strong>株式会社バーニングトライブ</strong></p>
+      <p>所在地：東京都</p>
+      <p>TEL：03-3412-8155</p>
+      <p>MAIL：<a href="mailto:burningtribesuzu@gmail.com">burningtribesuzu@gmail.com</a></p>
+      <p>WEB：<a href="https://horusuzu.github.io/burningtribe-legal/" target="_blank" rel="noopener">burningtribe-legal</a></p>
+    </div>
   </div>
 </body>
 </html>
