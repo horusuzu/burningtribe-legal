@@ -5,45 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>プライバシーポリシー — 宅建AI</title>
   <style>
-    :root {
-      --bg: #0d1117; --surface: #161b22; --border: #30363d;
-      --text: #e6edf3; --muted: #8b949e; --accent: #58a6ff; --max: 720px;
-    }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif; line-height: 1.75; padding: 2rem 1.25rem 5rem; }
-    .container { max-width: var(--max); margin: 0 auto; }
-    h1 { font-size: 1.75rem; font-weight: 900; margin-bottom: 0.25rem; }
-    .meta { color: var(--muted); font-size: 0.875rem; margin-bottom: 2.5rem; }
-    h2 { font-size: 1.1rem; font-weight: 700; margin: 2rem 0 0.5rem; border-left: 3px solid var(--accent); padding-left: 0.75rem; }
-    p { color: var(--muted); margin-bottom: 0.75rem; }
-    a { color: var(--accent); }
-    hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
-    .back { display: inline-block; color: var(--accent); font-size: 0.875rem; margin-bottom: 1.5rem; text-decoration: none; }
+    :root { --bg:#0d1117; --surface:#161b22; --border:#30363d; --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --max:720px; }
+    *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+    body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif; line-height:1.75; padding:2rem 1.25rem 5rem; }
+    .container { max-width:var(--max); margin:0 auto; }
+    h1 { font-size:1.75rem; font-weight:900; margin-bottom:.25rem; }
+    .meta { color:var(--muted); font-size:.875rem; margin-bottom:2.5rem; }
+    h2 { font-size:1.1rem; font-weight:700; margin:2rem 0 .5rem; border-left:3px solid var(--accent); padding-left:.75rem; }
+    p, li { color:var(--muted); margin-bottom:.75rem; }
+    ul { padding-left:1.4rem; }
+    a { color:var(--accent); }
+    hr { border:0; border-top:1px solid var(--border); margin:2.5rem 0; }
+    .back { display:inline-block; color:var(--accent); font-size:.875rem; margin-bottom:1.5rem; text-decoration:none; }
   </style>
 </head>
 <body>
   <div class="container">
     <a class="back" href="../">← アプリ一覧</a>
     <h1>プライバシーポリシー</h1>
-    <p class="meta">宅建AI &nbsp;|&nbsp; 最終更新日: 2026年5月7日</p>
+    <p class="meta">宅建AI | 最終更新日: 2026年9月24日</p>
 
-    <h2>1. 収集する情報</h2>
-    <p>本アプリは個人情報をサーバーに送信しません。学習進捗・設定情報は端末内にのみ保存されます。</p>
+    <h2>1. 対象アプリと端末内データ</h2>
+    <p>本ポリシーは株式会社バーニングトライブ（以下「当社」）が提供する「宅建AI」（iOS Bundle ID / Android package: <code>com.burningtribe.takkenai</code>）に適用されます。会員登録やログインは不要で、氏名・連絡先の入力も求めません。解答記録（正誤）、保存した復習問題、合格トレーニングの学習履歴、初回案内の回答、AIへの送信の同意状態は端末内に保存し、当社のサーバーへ送信しません。</p>
+
     <h2>2. サブスクリプション情報</h2>
-    <p>本アプリはRevenueCatを通じてサブスクリプションを提供します。RevenueCatのプライバシーポリシーが適用されます。サブスクリプション状態の管理にのみ使用します。</p>
-    <h2>3. 第三者サービス</h2>
-    <p>Apple App Store（決済処理）のプライバシーポリシーが適用されます。</p>
+    <p>プレミアム（月額・年額の自動更新サブスクリプション）の購入、復元、購読状態の確認にはRevenueCatおよびApple App Store・Google Playの課金基盤を利用します。購読状態の確認のため、RevenueCatが発行する匿名のアプリユーザーID、購入履歴、購読状態がRevenueCatおよび各ストアとの間でやり取りされます。決済情報は各ストアが処理し、当社はカード番号等を取得しません。</p>
 
-    <h2>4. データの削除</h2>
-    <p>アプリのアンインストールにより端末内のすべてのデータが削除されます。</p>
+    <h2>3. AI学習相談（プレミアム機能・送信前に同意を確認）</h2>
+    <p>AI学習相談を使うと、入力した質問文、直近の正答率、苦手な分野名を、当社が運営するサーバー（Cloudflare Workers）経由でGoogle LLC の生成AI（Gemini API）へ送信し、学習アドバイスの作成だけに使用します。初めて送信する前にアプリ内で送信先と送信内容を示して同意を確認し、同意しない場合は送信しません。同意はアプリの「設定」→「AIへの送信」からいつでも取り消せます。当社のサーバーは質問文を保存しません。AIに接続できなかった場合は、原因調査のため本アプリの識別名とエラーの種類だけを記録します（質問文は含みません）。短時間の大量送信を防ぐため、接続元IPアドレスを使った一時的な回数制限を行います。Googleは同社の規約に基づいて送信内容を処理します。質問欄には氏名、住所、連絡先、契約中の物件情報などの個人情報を入力しないでください。</p>
 
-    <h2>5. お問い合わせ</h2>
-    <p>メール: <a href="mailto:burningtribesuzu@gmail.com">burningtribesuzu@gmail.com</a><br>
-    開発者: バーニングトライブ<br>
-    Bundle ID: com.burningtribe.takkenai</p>
+    <h2>4. 自社アプリのおすすめ表示（無料でご利用の場合）</h2>
+    <p>無料でご利用の場合、当社の他のアプリや関連サイトを紹介する自社広告を表示します。表示する広告の一覧の取得、表示回数とタップ回数の計測のため、当社のサーバー（ads.burningtribe.tokyo）へ、本アプリの識別名、表示した広告の紹介先、端末の種類（iOS／Android）を送信します。広告をタップすると、同じサーバーでタップを記録してからApp Store、Google Playまたは紹介先のページを開きます。これらの通信は、購読状態を確認して無料プランと判定され、広告が画面に表示されている間だけ行います。プレミアムをご利用中は自社広告を表示せず、これらの通信も行いません。</p>
 
+    <h2>5. 追跡・第三者広告</h2>
+    <p>本アプリはGoogle AdMobその他の第三者広告SDKを搭載していません。広告ID（IDFA等）を収集せず、他社のアプリやウェブサイトをまたいだ追跡を行わないため、App Tracking Transparency（ATT）による許可の要求は行いません。</p>
+
+    <h2>6. 第三者サービス</h2>
+    <p>Apple App Store・Google Play（決済処理）、RevenueCat（購読状態の管理）、Cloudflare（当社サーバーの運用）、Google Gemini API（AI学習相談の応答作成。同意した場合のみ）を利用し、各社のプライバシーポリシーが適用されます。</p>
+
+    <h2>7. お問い合わせ機能</h2>
+    <p>設定画面の「お問い合わせ」は、端末のメールアプリまたはLINEを開くだけで、本アプリが内容を自動送信することはありません。</p>
+
+    <h2>8. 保存期間と削除</h2>
+    <p>端末内のデータはアプリの削除により削除されます（問題演習の正答履歴は設定の「正答履歴をリセット」でも消せます）。購入およびサブスクリプション情報は、Apple App Store、Google PlayおよびRevenueCatが各事業者のポリシーや法令に基づき保持し、当社はこれを直接削除できません。削除または取扱いに関するお問い合わせで受領したメールと対応記録は、対応完了後180日以内に削除します。</p>
+
+    <h2>9. お問い合わせ</h2>
+    <p>メール: <a href="mailto:burningtribe.apps@gmail.com">burningtribe.apps@gmail.com</a><br>運営者: 株式会社バーニングトライブ<br>Bundle ID: com.burningtribe.takkenai</p>
     <hr>
-    <p style="font-size:0.8rem;">© 2026 バーニングトライブ</p>
+    <p style="font-size:.8rem;">© 2026 株式会社バーニングトライブ</p>
   </div>
 </body>
 </html>
