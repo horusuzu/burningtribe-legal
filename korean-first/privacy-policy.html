@@ -15,7 +15,8 @@
     h1 { font-size: 1.75rem; font-weight: 900; margin-bottom: 0.25rem; }
     .meta { color: var(--muted); font-size: 0.875rem; margin-bottom: 2.5rem; }
     h2 { font-size: 1.1rem; font-weight: 700; margin: 2rem 0 0.5rem; border-left: 3px solid var(--accent); padding-left: 0.75rem; }
-    p { color: var(--muted); margin-bottom: 0.75rem; }
+    p, li { color: var(--muted); margin-bottom: 0.75rem; }
+    ul { padding-left: 1.25rem; }
     a { color: var(--accent); }
     hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
     .back { display: inline-block; color: var(--accent); font-size: 0.875rem; margin-bottom: 1.5rem; text-decoration: none; }
@@ -25,25 +26,46 @@
   <div class="container">
     <a class="back" href="../">← アプリ一覧</a>
     <h1>プライバシーポリシー</h1>
-    <p class="meta">はじめての韓国語 &nbsp;|&nbsp; 最終更新日: 2026年5月7日</p>
+    <p class="meta">はじめての韓国語 &nbsp;|&nbsp; 最終更新日: 2026年9月24日</p>
 
-    <h2>1. 収集する情報</h2>
-    <p>本アプリは個人情報をサーバーに送信しません。学習進捗・設定情報は端末内にのみ保存されます。</p>
-    <h2>2. サブスクリプション情報</h2>
-    <p>本アプリはRevenueCatを通じてサブスクリプションを提供します。RevenueCatのプライバシーポリシーが適用されます。サブスクリプション状態の管理にのみ使用します。</p>
-    <h2>3. 第三者サービス</h2>
-    <p>Apple App Store（決済処理）のプライバシーポリシーが適用されます。</p>
+    <h2>1. 端末内だけで扱う情報</h2>
+    <p>学習履歴、完了したレッスン、問題への回答と正誤、10問テストと復習の記録、AI相談への自由入力、外部AI送信への同意の状態、オンボーディングの状態は、端末内にのみ保存します。これらを当社や第三者へ送信することはありません（下記2〜4で説明する場合を除きます）。</p>
 
-    <h2>4. データの削除</h2>
-    <p>アプリのアンインストールにより端末内のすべてのデータが削除されます。</p>
+    <h2>2. AI相談の外部AI利用（プレミアム・任意）</h2>
+    <p>AI相談で外部AIを使うのはプレミアムの方だけです。アプリ内の同意画面で同意した場合に限り、あらかじめ用意された「固定クイック学習プロンプト」を選んだときだけ、次の内容を当社のサーバー（Cloudflare Workers）経由で Google LLC（米国）の生成AI「Gemini API」へ送信し、回答を作成します。</p>
+    <ul>
+      <li>選んだ固定クイック学習プロンプトの文章</li>
+      <li>韓国語学習に限定するための固定の指示文</li>
+    </ul>
+    <p>自由入力の文章、苦手ポイント、学習履歴、氏名、メールアドレス、広告IDは送信しません（自由入力は端末内の学習ガイドで処理します）。同意しない場合は送信せず、端末内の学習ガイドだけを表示します。同意は設定画面の「外部AI送信への同意をリセット」からいつでも取り消せます。送信した内容は、Google の規約とプライバシーポリシーに基づいて処理されます。</p>
+    <p>外部AIの回答について「この回答を報告する」を選んだ場合に限り、アプリの識別名、重複防止用の報告ID、選んだ理由、固定プロンプト、AIの回答を当社のサーバーへ送信します。内容の確認と改善にのみ使用します。</p>
 
-    <h2>5. お問い合わせ</h2>
-    <p>メール: <a href="mailto:burningtribesuzu@gmail.com">burningtribesuzu@gmail.com</a><br>
-    開発者: バーニングトライブ<br>
-    Bundle ID: com.burningtribe.koreanfirst</p>
+    <h2>3. サブスクリプション（RevenueCat）</h2>
+    <p>購入・復元・購読状態の確認には、Apple App Store または Google Play と RevenueCat を使用します。RevenueCat には、アプリ内で自動生成される匿名の利用者ID、購入履歴、購読状態などサブスクリプションの提供に必要な情報が送信され、RevenueCat のプライバシーポリシーに基づいて処理されます。本アプリはクレジットカード番号などの決済情報を取得しません。</p>
+
+    <h2>4. 自社アプリの紹介表示</h2>
+    <p>プレミアムを購読していない方には、学習画面と演習画面に当社の他アプリを紹介する表示（自社広告）を出します。表示する内容は当社のサーバー（ads.burningtribe.tokyo）から取得し、表示時とタップ時に、このアプリの識別名、紹介先アプリ（ストアURL）、OSの種類を当社サーバーへ送信します（表示回数・タップ回数の集計のため）。氏名、メールアドレス、学習内容、広告ID（IDFA / Google 広告ID）は送信しません。通信の性質上、IPアドレスなどの接続情報がサーバーに届きます。プレミアムの購読者には表示せず、通信もしません。</p>
+
+    <h2>5. 広告SDK・トラッキング</h2>
+    <p>第三者の広告SDK（Google AdMob など）、App Tracking Transparency（ATT）による追跡、広告ID、外部の行動分析サービスは使用しません。</p>
+
+    <h2>6. 通知</h2>
+    <p>無料期間の終了前のお知らせなどを端末内のローカル通知で送る場合があります。通知の許可は端末の設定からいつでも変更できます。</p>
+
+    <h2>7. お問い合わせ</h2>
+    <p>メールまたは LINE で自らお問い合わせいただいた場合、入力された内容は各サービスを通じて当社へ届き、お問い合わせへの対応にのみ使用します。アプリが問い合わせ内容を自動で送信することはありません。</p>
+
+    <h2>8. データの削除</h2>
+    <p>アプリを削除すると、端末内のすべての学習データが削除されます。サブスクリプションの解約は、App Store または Google Play の定期購入の管理画面から行えます。報告やお問い合わせで送信した内容の削除を希望される場合は、下記のメールアドレスへご連絡ください。</p>
+
+    <h2>9. 運営者・お問い合わせ先</h2>
+    <p>株式会社バーニングトライブ<br>
+    メール: <a href="mailto:burningtribe.apps@gmail.com">burningtribe.apps@gmail.com</a><br>
+    Bundle ID / パッケージ名: com.burningtribe.koreanfirst</p>
 
     <hr>
-    <p style="font-size:0.8rem;">© 2026 バーニングトライブ</p>
+    <p style="font-size:0.8rem;">本アプリは韓国語学習の補助アプリです。問題は公開資料を参考にした独自問題で、TOPIK の過去問の転載ではありません。国立国際教育院（TOPIK 実施機関）など試験の実施団体とは提携しておらず、公式教材ではありません。音声の再生機能はありません。</p>
+    <p style="font-size:0.8rem;">© 2026 株式会社バーニングトライブ</p>
   </div>
 </body>
 </html>
