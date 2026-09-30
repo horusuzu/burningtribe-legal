@@ -49,26 +49,28 @@
   <div class="container">
     <a class="back" href="../">アプリ一覧へ戻る</a>
     <h1>プライバシーポリシー</h1>
-    <p class="meta">Shukatsu Adviser / 終活アドバイザー | 最終更新日: 2026年7月4日</p>
+    <p class="meta">Shukatsu Adviser / 終活アドバイザー | 最終更新日: 2026年9月24日</p>
 
     <h2>1. 対象アプリと事業者</h2>
-    <p>本ポリシーは、Burning Tribe Inc. が提供する Shukatsu Adviser / 終活アドバイザー（Android package: com.burningtribe.endoflifeadviser、iOS bundle ID: com.burningtribe.endoflifeadviser）に適用されます。</p>
+    <p>本ポリシーは、株式会社バーニングトライブ（以下「当社」）が提供する Shukatsu Adviser / 終活アドバイザー（Android package: com.burningtribe.endoflifeadviser、iOS bundle ID: com.burningtribe.endoflifeadviser）に適用されます。</p>
     <p>本アプリはアカウント作成機能を提供しません。ユーザー登録、ログイン、プロフィール公開、外部SNS連携はありません。</p>
 
     <h2>2. 収集または利用する情報</h2>
-    <p>本アプリは、学習進捗、設定、無料利用回数などを端末内に保存します。本アプリ自体が氏名、住所、電話番号などを入力必須にすることはありません。</p>
-    <p>サブスクリプション、AI相談、問い合わせの利用時には、以下の情報が利用される場合があります。</p>
+    <p>本アプリは、学習進捗（完了したレッスン、演習の回答と正誤、トレーニングの履歴）、終活チェックの結果、設定、AI送信への同意の有無などを端末内に保存します。これらは当社のサーバーへ送信しません。本アプリ自体が氏名、住所、電話番号などを入力必須にすることはありません。</p>
+    <p>サブスクリプション、学習ガイド（AI）、自社広告、問い合わせの利用時には、以下の情報が利用される場合があります。</p>
     <ul>
       <li>RevenueCat: サブスクリプション状態、購入履歴、アプリ内ユーザーID、端末やストアに関する情報。</li>
       <li>Google Play Billing / Apple App Store: 購入処理、支払い状態、返金、サブスクリプション管理に必要な情報。クレジットカード番号などの決済情報は各ストアが処理し、当社は取得しません。</li>
-      <li>AI相談: AI API URL が設定されたビルドでは、ユーザーが入力した相談文とアプリの学習コンテキストをAI処理用のサーバーへ一時送信する場合があります。AI API URL が設定されていないビルドでは端末内の定型ロジックで回答します。</li>
+      <li>学習ガイド（AI、プレミアム限定）: アプリ内の同意画面で同意した場合に限り、アプリに用意された固定の学習用質問文と固定の学習指示を、当社のサーバー（Cloudflare Workers）経由で Google LLC の Google Gemini API へ送信し、回答を受け取ります。自由入力の内容、苦手ポイント、本人・家族・病状・財産などの情報は送信せず、端末内で処理します。当社のサーバーは不正利用防止（回数制限）のためIPアドレスを一時的に利用します。同意は設定画面の「AIへの送信の同意を取り消す」からいつでも取り消せます。</li>
+      <li>AI回答の報告: ユーザーがAIの回答を報告した場合に限り、アプリ識別子、重複防止用の報告ID、選択した理由、固定の質問文、AIの回答を、当社のサーバー（Cloudflare Workers）経由で当社の受信先へ送信します。</li>
+      <li>自社広告: 無料版では当社の他アプリを紹介する広告を表示します。広告の在庫取得、表示回数・タップ回数の集計のため、アプリ識別子、表示先のストアURL、OS種別を当社のサーバー（ads.burningtribe.tokyo）へ送信します。広告IDや端末を識別する情報は送信しません。プレミアム利用者には表示せず、通信もしません。</li>
       <li>問い合わせ: メールアプリを通じてユーザーが送信した内容、メールアドレス、端末や利用状況に関する任意の記載。</li>
     </ul>
-    <p>本アプリは広告SDKを利用しません。Google Advertising ID、IDFA、または広告配信・広告効果測定を目的としたトラッキング情報を収集しません。</p>
+    <p>本アプリは第三者の広告SDKを利用しません。Google Advertising ID、IDFA、または他社のアプリやウェブサイトをまたいだトラッキング情報を収集しません。</p>
 
     <h2>3. 利用目的</h2>
     <p>当社および第三者サービスは、学習機能の提供、サブスクリプションの管理、購入復元、不正防止、問い合わせ対応、サービス品質改善、法令やストアポリシーへの対応のために情報を利用します。</p>
-    <p>当社は、本アプリを通じて取得した個人データを販売しません。第三者サービスへの共有は、決済、サブスクリプション管理、AI相談、問い合わせ対応など、本アプリの提供に必要な範囲に限定します。</p>
+    <p>当社は、本アプリを通じて取得した個人データを販売しません。第三者サービスへの共有は、決済、サブスクリプション管理、学習ガイド（AI）、問い合わせ対応など、本アプリの提供に必要な範囲に限定します。</p>
 
     <h2>4. 第三者サービス</h2>
     <p>本アプリは以下の第三者サービスを利用します。各サービスによる情報の取り扱いには、それぞれのプライバシーポリシーが適用されます。</p>
@@ -76,10 +78,12 @@
       <li>RevenueCat: <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a></li>
       <li>Google Play Billing: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
       <li>Apple App Store: <a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></li>
+      <li>Google Gemini API（Google LLC）: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+      <li>Cloudflare（当社サーバーの基盤）: <a href="https://www.cloudflare.com/privacypolicy/">https://www.cloudflare.com/privacypolicy/</a></li>
     </ul>
 
     <h2>5. 広告識別子とトラッキング</h2>
-    <p>本アプリは広告を表示せず、広告SDK、App Tracking Transparency、IDFA、Google Advertising ID を使用しません。Android ビルドでは Google Advertising ID permission を block しています。</p>
+    <p>本アプリが表示する広告は当社の他アプリを紹介する自社広告のみです。第三者の広告SDK、App Tracking Transparency、IDFA、Google Advertising ID は使用しません。Android ビルドでは Google Advertising ID permission を block しています。</p>
 
     <h2>6. データの保持と削除</h2>
     <p>端末内に保存された学習進捗や設定は、アプリのアンインストールにより削除されます。サブスクリプションや購入履歴は、Google Play、Apple App Store、RevenueCat の保持ポリシーに従って管理されます。問い合わせメールは、対応と記録保持に必要な範囲で保存し、不要になった時点で削除します。</p>
@@ -96,14 +100,14 @@
 
     <h2>10. お問い合わせ</h2>
     <p>プライバシーに関するお問い合わせは、以下までご連絡ください。</p>
-    <p>Burning Tribe Inc.<br>
-    Email: <a href="mailto:burningtribesuzu@gmail.com">burningtribesuzu@gmail.com</a><br>
+    <p>株式会社バーニングトライブ<br>
+    Email: <a href="mailto:burningtribe.apps@gmail.com">burningtribe.apps@gmail.com</a><br>
     Support: <a href="mailto:burningtribesuzu@gmail.com">burningtribesuzu@gmail.com</a><br>
     App: Shukatsu Adviser / 終活アドバイザー<br>
     Android package: com.burningtribe.endoflifeadviser</p>
 
     <hr>
-    <p style="font-size:0.8rem;">© 2026 Burning Tribe Inc.</p>
+    <p style="font-size:0.8rem;">© 2026 株式会社バーニングトライブ</p>
   </div>
 </body>
 </html>
